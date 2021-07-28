@@ -76,9 +76,9 @@ const InputForm = () => {
     // if (isTransliterationChecked) {
     //   transliterator(value, languageOne);
     // } else {
-      if (isSubmitClicked) {
-        translateLanguageHandler(value);
-      }
+     // if (isSubmitClicked) {
+      //  translateLanguageHandler(value);
+     // }
     // }
   };
 
@@ -144,19 +144,22 @@ const InputForm = () => {
     }
   };
 
-  useEffect(() => {
-    if (isSubmitClicked) {
-      translateLanguageHandler(itemInput);
-    }
+ // useEffect(() => {
+ //   if (isSubmitClicked) {
+   //   translateLanguageHandler(itemInput);
+   // }
     // eslint-disable-next-line
-  }, [languageTwo]);
+//  }, [languageTwo]);
 
-  useEffect(() => {
-    if (isSubmitClicked) {
-      translateLanguageHandler(itemInput);
-    }
+ // useEffect(() => {
+  //  if (isSubmitClicked) {
+    //  translateLanguageHandler(itemInput);
+   // }
     // eslint-disable-next-line
-  }, [isSubmitClicked]);
+//  }, [isSubmitClicked]);
+  const handleSubmit = () => {
+   translateLanguageHandler(itemInput);
+  }
 
   const onLanguageChange = () => {
     setlanguageOne(languageTwo);
@@ -263,7 +266,9 @@ const InputForm = () => {
         </div>
           <button type="button" 
           className="inputForm__detect-btn inputForm__translate-btn"  
-          onClick={()=>setisSubmitClicked(true)} >Translate</button>
+        //  onClick={()=>setisSubmitClicked(true)} 
+            onClick={handleSubmit}
+            >Translate</button>
       </form>
     </>
   );
