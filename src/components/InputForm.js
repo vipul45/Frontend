@@ -83,7 +83,7 @@ const InputForm = () => {
   };
 
 
-transliterator(itemInput, languageOne)
+
   const transliterator = async (value, language) => {
     try {
       const { data } = await transliteration.hindiTransliteration({
@@ -96,7 +96,8 @@ transliterator(itemInput, languageOne)
       logger.consoleLogError("transliteration error ", error);
     }
   };
-
+transliterator(itemInput, languageOne)
+  
   const translateLanguageHandler = (value) => {
     logger.consoleLogData("languageTwo", languageTwo);
     if (languageOne === "English" && languageTwo === "Arabic") {
