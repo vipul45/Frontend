@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "styles/inputForm.css";
 import { detectLanguage } from "api/detectLanguage";
 import * as translator from "api/translation";
@@ -12,7 +12,7 @@ const InputForm = () => {
   const [loading, setloading] = useState({ state: false, text: "" });
   const [languageTwo, setlanguageTwo] = useState("");
   const [itemInput, setItemInput] = useState("");
-  const [isSubmitClicked, setisSubmitClicked] = useState(false);
+  //const [isSubmitClicked, setisSubmitClicked] = useState(false);
   const [translationResult, setTranslationResult] = useState("Translation");
   const [isTransliterationChecked, setisTransliterationChecked] =
     useState(false);
@@ -167,8 +167,8 @@ const InputForm = () => {
     setItemInput("");
     setTranslationResult("Translation");
   };
-  const handleTransliteration = () =>
-    setisTransliterationChecked(!isTransliterationChecked);
+ // const handleTransliteration = () =>
+ //   setisTransliterationChecked(!isTransliterationChecked);
 
   return (
     <>
