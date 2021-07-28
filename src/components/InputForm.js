@@ -14,8 +14,8 @@ const InputForm = () => {
   const [itemInput, setItemInput] = useState("");
   //const [isSubmitClicked, setisSubmitClicked] = useState(false);
   const [translationResult, setTranslationResult] = useState("Translation");
-  const [isTransliterationChecked, setisTransliterationChecked] =
-    useState(false);
+  //const [isTransliterationChecked, setisTransliterationChecked] =
+   // useState(false);
   const translateLanguageAvailable = languages.filter(
     (item) => item.language === languageOne
   );
@@ -83,7 +83,7 @@ const InputForm = () => {
   };
 
 
-
+transliterator(itemInput, languageOne)
   const transliterator = async (value, language) => {
     try {
       const { data } = await transliteration.hindiTransliteration({
@@ -91,7 +91,7 @@ const InputForm = () => {
         language,
       });
       logger.consoleLogData("trasnliterator ", data);
-      translateLanguageHandler(data);
+    // translateLanguageHandler(data);
     } catch (error) {
       logger.consoleLogError("transliteration error ", error);
     }
