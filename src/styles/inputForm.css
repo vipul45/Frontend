@@ -1,0 +1,144 @@
+.inputForm__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.inputForm__heading {
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.inputForm__container {
+  padding: 1rem;
+}
+
+.inputForm__div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inputForm__input_container {
+  flex: 1;
+  /* padding: 0 1rem; */
+}
+
+.inputForm__language_container {
+  display: flex;
+}
+
+.inputForm__transliteration {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: bold;
+  background-color: white;
+}
+
+.inputForm__detect-btn {
+  flex: 1;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 1.5rem 0.2rem;
+  padding: 0;
+  border-radius: 5px;
+  border: 0;
+  background-color: white;
+  text-transform: capitalize;
+}
+
+.inputForm__translate-btn{
+  width: 47%;
+  padding: 1rem;
+  background-color: rgb(36, 196, 36);
+  color: white;
+}
+
+.inputForm__input {
+  flex: 1.2;
+  width: 100%;
+  /* margin-bottom: 3px; */
+  margin: 1.5rem 0;
+  padding: 1rem 0.5rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+}
+
+.inputForm_textArea {
+  width: 100%;
+  height: 25vh;
+  border-radius: 5px;
+  /* padding: 1rem; */
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+
+.inputForm__label {
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 1.6rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.inputForm__disabled {
+  background-color: #e9ecef;
+}
+
+.exchange-icon i {
+  color: white;
+  cursor: pointer;
+  padding: 0 1rem;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .inputForm__input {
+    font-size: 1.3rem;
+  }
+  .inputForm__detect-btn {
+    font-size: 1.3rem;
+  }
+  .exchange-icon i {
+    font-size: 2rem;
+  }
+  .inputForm_textArea {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .inputForm__header {
+    margin-bottom: 0;
+  }
+  .inputForm__div {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .inputForm__header {
+    margin-bottom: 0;
+  }
+  .inputForm__div {
+    flex-direction: column-reverse;
+  }
+  .inputForm__input {
+    font-size: 1.3rem;
+  }
+  .inputForm__detect-btn {
+    font-size: 1.3rem;
+  }
+  .exchange-icon i {
+    font-size: 2rem;
+  }
+  .inputForm_textArea {
+    font-size: 1.5rem;
+  }
+}

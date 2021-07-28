@@ -1,0 +1,12 @@
+.loader {
+  /* width: 69%; */
+  /* position: absolute; */
+  /* left: 45%; */
+  /* top: 30%; */
+  text-align: center;
+}
+
+.loader__text {
+  color: white;
+  font-size: 2rem;
+}

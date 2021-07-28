@@ -1,0 +1,37 @@
+.app {
+  min-height: 74.8vh;
+}
+.app__container {
+  margin: 3rem auto;
+  overflow: auto;
+  min-height: 40vh;
+  border: 1px solid steelblue;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to bottom right, #3c1053, #ad5389);
+  max-width: 70%;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin-top: 0;
+  }
+}
